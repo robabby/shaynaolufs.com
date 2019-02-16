@@ -42,7 +42,7 @@ const Inner = styled.div`
 `;
 
 const BigTitle = styled.h1`
-  ${tw('text-5xl lg:text-6xl font-serif text-white mb-6 tracking-wide')};
+  ${tw('text-3xl lg:text-5xl font-serif text-white mb-6 tracking-wide')};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
 `;
 
@@ -177,8 +177,8 @@ const Index = () => (
           </Subtitle>
         </Hero>
       </Content>
-      <DividerMiddle bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)" speed={-0.2} offset={1.1} />
-      <Content speed={0.4} offset={1}>
+      {/* <DividerMiddle bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)" speed={-0.2} offset={1.1} /> */}
+      {/* <Content speed={0.4} offset={1}>
         <Inner>
           <Title>Projects</Title>
           <ProjectsWrapper>
@@ -212,8 +212,8 @@ const Index = () => (
             </ProjectCard>
           </ProjectsWrapper>
         </Inner>
-      </Content>
-      <Divider speed={0.1} offset={1}>
+      </Content> */}
+      {/* <Divider speed={0.1} offset={1}> */}
         {/* <UpDown>
           <SVG icon="box" width={6} fill={colors.white} left="85%" top="75%" />
           <SVG icon="upDown" width={8} fill={colors.teal} left="70%" top="20%" />
@@ -234,8 +234,8 @@ const Index = () => (
           <SVG icon="box" width={12} fill={colors.yellow} left="29%" top="26%" />
           <SVG icon="hexa" width={16} stroke={colors.red} left="75%" top="30%" />
         <SVG icon="hexa" width={8} stroke={colors.yellow} left="80%" top="70%" /> */}
-      </Divider>
-      <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={2} />
+      {/* </Divider> */}
+      {/* <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={2} />
       <Divider speed={0.1} offset={2}>
         <UpDown>
           <SVG icon="box" className={hidden} width={6} fill={colors.blue} left="50%" top="75%" />
@@ -304,8 +304,8 @@ const Index = () => (
           &copy; 2018 by Gatsby Starter Portfolio Cara.{' '}
           <a href="https://github.com/LeKoArts/gatsby-starter-portfolio-cara">Github Repository</a>.
         </Footer>
-      </Content>
-      <Divider speed={0.1} offset={3}>
+      </Content> */}
+      {/* <Divider speed={0.1} offset={3}>
         <UpDown>
           <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="70%" top="20%" />
           <SVG icon="triangle" width={8} stroke={colors['grey-darkest']} left="25%" top="5%" />
@@ -319,7 +319,7 @@ const Index = () => (
         <SVG icon="circle" width={12} fill={colors['grey-darkest']} left="70%" top="60%" />
         <SVG icon="box" width={12} fill={colors['grey-darkest']} left="20%" top="30%" />
         <SVG icon="hexa" width={8} stroke={colors['grey-darkest']} left="80%" top="70%" />
-      </Divider>
+      </Divider> */}
     </Parallax>
   </React.Fragment>
 );
