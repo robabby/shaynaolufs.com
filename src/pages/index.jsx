@@ -67,6 +67,14 @@ const Subtitle = styled.p`
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 `;
 
+const SubtitleLink = styled.a`
+  ${tw('text-blue-light font-sans text-xl md:text-2xl lg:text-3xl')};
+  a {
+    color: #e07628;
+    text-decoration: none;
+  }
+`;
+
 const ProjectsWrapper = styled.div`
   ${tw('flex flex-wrap justify-between mt-8')};
   display: grid;
@@ -129,14 +137,14 @@ console.log(colors);
 const Index = () => (
   <React.Fragment>
     <SEO />
-    <Parallax pages={4}>
+    <Parallax pages={1}>
       <Divider speed={0.2} offset={0}>
         <UpDown>
           <SVG icon="merkabah" className={hidden} width={48} stroke={colors.orange} left="10%" top="20%" />
-          <SVG icon="flowerOfLife" width={48} stroke={colors['blue-light']} left="60%" top="70%" />
+          <SVG icon="flowerOfLife" width={48} stroke={"rgba(55, 175, 255, .25)"} left="60%" top="70%" />
           <SVG icon="box" width={6} fill={colors['grey-darker']} left="60%" top="15%" />
         </UpDown>
-        <UpDownWide>
+        {/* <UpDownWide>
           <SVG icon="arrowUp" className={hidden} width={16} fill={colors['blue-dark']} left="80%" top="10%" />
           <SVG icon="sacredTriangleLines" width={12} stroke={colors.white} left="90%" top="50%" />
           <SVG icon="sacredFlower" width={24} stroke={colors['grey-darker']} left="70%" top="90%" />
@@ -151,11 +159,11 @@ const Index = () => (
         <SVG icon="upDown" className={hidden} width={24} fill={colors['grey-darker']} left="40%" top="80%" />
         <SVG icon="merkabah" width={8} stroke={colors['grey-darker']} left="25%" top="5%" />
         <SVG icon="circle" width={64} fill={colors.green} left="95%" top="5%" />
-        <SVG icon="box" className={hidden} width={64} fill={colors.purple} left="5%" top="90%" />
+        <SVG icon="box" className={hidden} width={64} fill={colors.purple} left="5%" top="90%" /> */}
         {/* <SVG icon="box" width={6} fill={colors['grey-darkest']} left="10%" top="10%" /> */}
         {/* <SVG icon="box" width={12} fill={colors['grey-darkest']} left="40%" top="30%" /> */}
-        <SVG icon="sacredTriangleLines" width={16} stroke={colors['grey-darker']} left="10%" top="50%" />
-        <SVG icon="merkabah" width={8} stroke={colors['grey-darker']} left="80%" top="70%" />
+        {/* <SVG icon="sacredTriangleLines" width={16} stroke={colors['grey-darker']} left="10%" top="50%" />
+        <SVG icon="merkabah" width={8} stroke={colors['grey-darker']} left="80%" top="70%" /> */}
       </Divider>
       <Content speed={0.4} offset={0}>
         <Hero>
@@ -163,7 +171,9 @@ const Index = () => (
             Hello, <br /> I'm Shayna Olufs.
           </BigTitle>
           <Subtitle>
-            Helping people and organizations cultivate centered leadership and unlock their full potential.
+            My website is currently under construction, but please reach out via&nbsp;
+            <SubtitleLink><a href="mailto:shaynaolufs@gmail.com">Email</a></SubtitleLink> or&nbsp; 
+            <SubtitleLink><a href="https://www.linkedin.com/in/shaynaolufs/">LinkedIn</a></SubtitleLink> to get in touch.
           </Subtitle>
         </Hero>
       </Content>
